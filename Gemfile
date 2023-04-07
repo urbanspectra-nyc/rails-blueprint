@@ -20,7 +20,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'sinatra', :require => nil # for sidekiq UI
 gem 'sidekiq-status'
-gem 'sidekiq'
+gem 'sidekiq', '>= 7.0.8'
 gem 'redis-rails'
 gem 'redis-objects'
 gem 'redis-namespace'
