@@ -4,11 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.0'
 
 # FOUNDATION
-gem 'rails', '6'
-gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'rails', '7.1.0'
+gem 'dotenv-rails', '>= 2.7.6', require: 'dotenv/rails-now'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'coffee-rails', '~> 4.2'
-gem 'webpacker'
+gem 'coffee-rails', '~> 5.0', '>= 5.0.0'
+gem 'webpacker', '>= 4.2.1'
 
 # PERFORMANCE
 gem 'bootsnap', '>= 1.1.0', require: false
@@ -16,7 +16,7 @@ gem 'dalli'
 gem 'memcachier'
 gem 'turbolinks', '~> 5'
 gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'sinatra', :require => nil # for sidekiq UI
 gem 'sidekiq-status'
@@ -27,25 +27,25 @@ gem 'redis-namespace'
 
 # TOOLS
 gem "sentry-raven"
-gem 'devise'
+gem 'devise', '>= 4.7.2'
 gem 'jbuilder'
 gem 'rack-cors', :require => 'rack/cors'
-gem 'postmark-rails'
+gem 'postmark-rails', '>= 0.21.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'letter_opener'
-  gem 'rspec-rails', '~> 3.6.0'
-  gem "factory_bot_rails", "~> 4.10.0"
+  gem 'rspec-rails', '~> 3.7.0'
+  gem "factory_bot_rails", "~> 4.11.0"
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'rename'
+  gem 'rename', '>= 1.0.8'
   gem "better_errors"
   gem "binding_of_caller"
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '>= 4.0.2'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
