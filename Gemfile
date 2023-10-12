@@ -42,7 +42,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'rename'
+  gem 'rename', '>= 1.0.8'
   gem "better_errors"
   gem "binding_of_caller"
   gem 'web-console', '>= 3.3.0'
