@@ -15,7 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'dalli'
 gem 'memcachier'
 gem 'turbolinks', '~> 5'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 5.6', '>= 5.6.9'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'sinatra', :require => nil # for sidekiq UI
