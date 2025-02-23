@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.0'
 
 # FOUNDATION
-gem 'rails', '6'
+gem 'rails', '7.0.0'
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'coffee-rails', '~> 4.2'
@@ -16,7 +16,7 @@ gem 'dalli'
 gem 'memcachier'
 gem 'turbolinks', '~> 5'
 gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'sinatra', :require => nil # for sidekiq UI
 gem 'sidekiq-status'
