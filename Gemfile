@@ -29,7 +29,7 @@ gem 'redis-namespace'
 gem "sentry-raven"
 gem 'devise'
 gem 'jbuilder'
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', '>= 3.0.0', :require => 'rack/cors'
 gem 'postmark-rails'
 
 group :development, :test do
