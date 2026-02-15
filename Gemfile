@@ -26,7 +26,7 @@ gem 'redis-objects'
 gem 'redis-namespace'
 
 # TOOLS
-gem "sentry-raven"
+gem "sentry-raven", ">= 3.0.1"
 gem 'devise'
 gem 'jbuilder'
 gem 'rack-cors', :require => 'rack/cors'
